@@ -1,3 +1,5 @@
-#SPDX-License-Identifier: MIT-0
 ---
 # defaults file for waal70.homepage
+# Make sure to end in slash!
+homepage_src_dir: /home/awaal/ansible/home/homepage
+homepage_target_dir: /appdata/homepage

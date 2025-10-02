@@ -12,7 +12,8 @@ You have a folder containing yaml files that adhere to homepage's requirements
 Role Variables
 --------------
 
-homepage_config_dir: should point to where the yamls can be found
+homepage_src_dir: should point to where the yamls can be found
+homepage_target_dir: where they will be placed
 
 Dependencies
 ------------
