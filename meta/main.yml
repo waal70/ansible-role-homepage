@@ -1,4 +1,4 @@
--galaxy_info:
+galaxy_info:
   author: waal70 (Andre)
   description: Role to install homepage into portainer and copy config files to host.
   company: waal70
