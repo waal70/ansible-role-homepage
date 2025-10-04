@@ -1,9 +1,5 @@
 ---
 # tasks file for waal70.homepage
-# - name: Include vaulted password file
-#   ansible.builtin.include_vars:
-#     file: ../home/ansible-vault/vaultwarden-vars.yml
-
 - name: "Template the homepage.yml file to the role's files/ directory"
   ansible.builtin.template:
     src: homepage.yml.j2
@@ -29,6 +25,8 @@
     mode: '0644'
   with_fileglob:
     - "{{ homepage_src_dir }}/*.yaml"
+    - "{{ homepage_src_dir }}/*.js"
+    - "{{ homepage_src_dir }}/*.css"
 
 - name: "Return the homepage yaml back to its placeholder version"
   ansible.builtin.copy:
