@@ -17,6 +17,7 @@
     stack_list:
       - name: homepage
         file: homepage.yml # file is in files/ of this role
+        endpointid: 14 # optional, defaults to 1
 
 - name: "Copy over the (existing) config files to the Portainer machine"
   ansible.builtin.template:
