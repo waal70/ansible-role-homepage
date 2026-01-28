@@ -28,13 +28,3 @@
     - "{{ homepage_src_dir }}/*.js"
     - "{{ homepage_src_dir }}/*.css"
 
-- name: "Return the homepage yaml back to its placeholder version"
-  ansible.builtin.copy:
-    src: homepage.yml.placeholder
-    dest: "{{ role_path }}/files/homepage.yml"
-    owner: "{{ interactive_user }}"
-    group: "{{ interactive_user }}"
-    mode: '0644'
-    remote_src: false
-    force: true
-  delegate_to: localhost
